@@ -15,10 +15,17 @@ public class Person {
         System.out.println(words);
     }
 
+    public static String[] usersList() {
+        String[] users = new String[] {"user1", "user2"};
+        return users;
+    }
+
     public static void main(String[] args) {
         Person person = new Person();
         person.sayHello();
         person.saySomething("I'm happy learning Java!");
         person.test(0, 1, "two", "three", "four");
+
+        System.out.println(Person.usersList());
     }
 }

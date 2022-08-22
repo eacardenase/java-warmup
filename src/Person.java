@@ -1,7 +1,10 @@
 import java.time.LocalDate;
 
 public class Person {
-    private final String middleName = "Alexander";
+    private String firstName;
+    private String middleName = "Alexander";
+    public String lastName;
+    protected LocalDate dob;
 
     public void  sayHello() {
         System.out.println("Hello");
@@ -24,6 +27,10 @@ public class Person {
 
     public static void main(String[] args) {
         Person person = new Person();
+
+        person.firstName = "Jake"; // main() method is member of the class
+        person.lastName = "Smith";
+
         person.sayHello();
         System.out.println(person.getMiddleInitial());
         person.saySomething("I'm happy learning Java!");

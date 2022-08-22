@@ -7,8 +7,8 @@ class NewsAgency {
     String name;
 
     public void accessMethod() {
-        Person person = new Person();
-        person.lastName = "Cardenas";
-        person.dob = LocalDate.now();
+//        Person person = new Person();
+//        person.lastName = "Cardenas";
+//        person.dob = LocalDate.now();
     }
 }

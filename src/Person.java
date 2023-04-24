@@ -1,5 +1,10 @@
+import java.time.LocalDate;
+
 public class Person {
+    private String firstName;
     private String middleName = "Alexander";
+    public String lastName;
+    protected LocalDate dob;
     public static double PI = 3.14; // shared between all the instances
     public static int[] nums = initNums();
 
@@ -43,6 +48,9 @@ public class Person {
 
     public static void main(String[] args) {
         Person person = new Person();
+
+        person.firstName = "Edwin";
+        person.lastName = "Cardenas";
 
         person.sayHello();
         person.saySomething("You are fully capable of deciding your own destiny.");

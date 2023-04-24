@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class Person {
     private String middleName = "Alexander";
+    public static double PI = 3.14; // shared between all the instances
 
     public void sayHello() {
         System.out.println("Hello");
@@ -46,5 +47,8 @@ public class Person {
         person.test(3, 5, words);
 
         person.test2(3, 5, "one", "two", "three");
+
+        System.out.println(Person.PI);
+        System.out.println(PI);
     }
 }

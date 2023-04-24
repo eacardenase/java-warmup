@@ -1,30 +1,19 @@
 public class Person {
     private String middleName = "Alexander";
     public static double PI = 3.14; // shared between all the instances
-    public static int[] nums;
-//    public static int[] nums = initNums();
+    public static int[] nums = initNums();
 
-    static {
-        nums = new int[5];
+    public static int[] initNums() {
+        int[] nums = new int[5];
 
         nums[0] = 1;
         nums[1] = 2;
         nums[2] = 3;
         nums[3] = 4;
         nums[4] = 5;
-    }
 
-//    public static int[] initNums() {
-//        int[] nums = new int[5];
-//
-//        nums[0] = 1;
-//        nums[1] = 2;
-//        nums[2] = 3;
-//        nums[3] = 4;
-//        nums[4] = 5;
-//
-//        return  nums;
-//    }
+        return  nums;
+    }
 
     public void sayHello() {
         System.out.println("Hello");

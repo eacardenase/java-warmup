@@ -1,12 +1,17 @@
 import business.Company;
 
+import java.time.LocalDate;
+
 public class Person {
-    private final double PI = 3.14;
     private String firstName;
-    private int age;
-    private long id;
-    private char middleInitial;
-    private byte myByte;
-    private Company company;
-    private NewsAgency agency;
+    private String lastName;
+    private LocalDate dob;
+
+    public void sayHello() {
+        System.out.println("Hello");
+    }
+
+    public void saySomething(String message) {
+        System.out.println(message);
+    }
 }

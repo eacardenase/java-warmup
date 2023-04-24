@@ -21,6 +21,16 @@ public class Person {
         return number1 + number2;
     }
 
+    public void test(int number1, int number2, String[] words) {
+        // do something with words
+    }
+
+    // varargs
+    public void test2(int number1, int number2, String... words) {
+        // do something with words
+        System.out.println(words.length);
+    }
+
     public static void main(String[] args) {
         Person person = new Person();
 
@@ -30,7 +40,11 @@ public class Person {
         person.saySomething("Which path will you choose?");
 
         System.out.println(person.getMiddleInitial());
-
         System.out.println(person.add(2, 5));
+
+        String[] words = new String[] {"one", "two", "three"};
+        person.test(3, 5, words);
+
+        person.test2(3, 5, "one", "two", "three");
     }
 }
